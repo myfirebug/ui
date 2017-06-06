@@ -111,7 +111,7 @@ CityPicker('#js-datetitmepicker',{
 *value:返回的数据
 *connector:连接符号
 *callback:返回的函数
-
+---------*
 DatetimePicker('#js-datetitmepicker',{
 	type:'date',
 	eventName:'click',
