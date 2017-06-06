@@ -45,5 +45,31 @@ Actions({
 });
 </code>
 </pre>
+<h3>Tips用法</h3>
+<pre>
+<code>
+Tips({
+  test: '提示',
+  delay: 5000
+});
+</code>
+</pre>
+<h3>Dialog用法</h3>
+<pre>
+<code>
+Dialog({
+  title: '提示',
+  message: '出错了',
+  buttons: [
+		{
+			text :'我已经了解了',
+			callback: function(){
+				alert(122);
+			}
+		}
+	]
+});
+</code>
+</pre>
 
 
