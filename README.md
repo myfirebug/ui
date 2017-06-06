@@ -10,22 +10,7 @@
 <p><a href="https://myfirebug.github.io/ui/dist/html/index.html">https://myfirebug.github.io/ui/dist/html/index.html</a></p>
 <h2>使用</h2>
 <h3>Toast用法</h3>
-<pre>
-<code>
-/*config参数说明
-*---------
-*text:内容  
-*icon:icon样式 
-*delay:延迟时间 
----------*/
-Toast({
-  message: '提示',
-  icon:'fails',
-  duration: 5000
-});
-</code>
-</pre>
-<h3>Action用法</h3>
+<div class="dp-highlighter"><div class="bar"></div><ol start="1" class="dp-j"><li class="alt"><span><span style="color:#999">/*config参数说明</span>&nbsp;</span></li><li class=""><span><span style="color:#999">*---------</span>&nbsp;</span></li><li class="alt"><span><span style="color:#999">*text:内容&nbsp;&nbsp;</span>&nbsp;</span></li><li class=""><span><span style="color:#999">*icon:icon样式&nbsp;</span>&nbsp;</span></li><li class="alt"><span><span style="color:#999">*delay:延迟时间&nbsp;</span>&nbsp;</span></li><li class=""><span><span style="color:#999">---------*/</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>Toast({&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;message:&nbsp;'提示',&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;icon:'fails',&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;duration:&nbsp;<span class="number">5000</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>});&nbsp;&nbsp;</span></li></ol></div><h3>Action用法</h3>
 <pre>
 <code>
 /*config参数说明
