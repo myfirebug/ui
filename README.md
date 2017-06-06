@@ -8,6 +8,12 @@
 <h3>Toast用法</h3>
 <pre>
 <code>
+*config参数说明
+*---------
+*text:内容  
+*icon:icon样式 
+*delay:延迟时间 
+---------*
 Toast({
   message: '提示',
   icon:'fails',
@@ -18,6 +24,12 @@ Toast({
 <h3>Action用法</h3>
 <pre>
 <code>
+*config参数说明
+*---------
+*title:标题
+*mask:是否有遮罩
+*actions:列表
+---------*
 Actions({
   title: '选择操作',
   mask:true,
@@ -48,6 +60,11 @@ Actions({
 <h3>Tips用法</h3>
 <pre>
 <code>
+*config参数说明
+*---------
+*text:内容  
+*delay:延迟时间  
+---------*
 Tips({
   test: '提示',
   delay: 5000
@@ -57,6 +74,12 @@ Tips({
 <h3>Dialog用法</h3>
 <pre>
 <code>
+*config参数说明
+*---------
+*title:标题
+*message:内容
+*buttons:按钮列表
+---------*
 Dialog({
   title: '提示',
   message: '出错了',
@@ -74,7 +97,19 @@ Dialog({
 <h3>Swiper用法</h3>
 <pre>
 <code>
-Dialog('#swiper-container',{
+*config参数说明
+*---------
+*container：必填项操作的DOM
+*wrapper：操作父dom
+*slide：滚动列表
+*initialSlide:从第几项开始
+*direction：滚动方向(horizontal(横向),vertical(纵向))
+*autoplay: 自由滚动
+*pagination：索引
+*startFn：开始函数
+*endFn: 滚动结束函数
+---------*
+new Swiper('#swiper-container',{
 	wrapper: '.swiper-wrapper',
 	slide: '.swiper-slide',
 	initialSlide:5,
@@ -89,7 +124,15 @@ Dialog('#swiper-container',{
 <h3>CityPicker用法</h3>
 <pre>
 <code>
-CityPicker('#js-datetitmepicker',{
+*config参数说明
+*---------
+*container：必填项操作的DOM
+*url:地址数据来源
+*eventName:事件类型
+*value:返回的数据
+*coordinates[]返回的数据坐标
+---------*
+new CityPicker('#js-datetitmepicker',{
 	eventName:'click',
 	url:'../js/address.min.js',
 	value:[],
@@ -112,7 +155,7 @@ CityPicker('#js-datetitmepicker',{
 *connector:连接符号
 *callback:返回的函数
 ---------*
-DatetimePicker('#js-datetitmepicker',{
+new DatetimePicker('#js-datetitmepicker',{
 	type:'date',
 	eventName:'click',
 	cols: cols,
