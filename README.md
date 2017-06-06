@@ -12,12 +12,12 @@
 <h3>Toast用法</h3>
 <pre>
 <code>
-*config参数说明
+/*config参数说明
 *---------
 *text:内容  
 *icon:icon样式 
 *delay:延迟时间 
----------*
+---------*/
 Toast({
   message: '提示',
   icon:'fails',
@@ -28,12 +28,12 @@ Toast({
 <h3>Action用法</h3>
 <pre>
 <code>
-*config参数说明
+/*config参数说明
 *---------
 *title:标题
 *mask:是否有遮罩
 *actions:列表
----------*
+---------*/
 Actions({
   title: '选择操作',
   mask:true,
@@ -64,11 +64,11 @@ Actions({
 <h3>Tips用法</h3>
 <pre>
 <code>
-*config参数说明
+/*config参数说明
 *---------
 *text:内容  
 *delay:延迟时间  
----------*
+---------*/
 Tips({
   test: '提示',
   delay: 5000
@@ -78,12 +78,12 @@ Tips({
 <h3>Dialog用法</h3>
 <pre>
 <code>
-*config参数说明
+/*config参数说明
 *---------
 *title:标题
 *message:内容
 *buttons:按钮列表
----------*
+---------*/
 Dialog({
   title: '提示',
   message: '出错了',
@@ -101,7 +101,7 @@ Dialog({
 <h3>Swiper用法</h3>
 <pre>
 <code>
-*config参数说明
+/*config参数说明
 *---------
 *container：必填项操作的DOM
 *wrapper：操作父dom
@@ -112,7 +112,7 @@ Dialog({
 *pagination：索引
 *startFn：开始函数
 *endFn: 滚动结束函数
----------*
+---------*/
 new Swiper('#swiper-container',{
 	wrapper: '.swiper-wrapper',
 	slide: '.swiper-slide',
@@ -128,14 +128,14 @@ new Swiper('#swiper-container',{
 <h3>CityPicker用法</h3>
 <pre>
 <code>
-*config参数说明
+/*config参数说明
 *---------
 *container：必填项操作的DOM
 *url:地址数据来源
 *eventName:事件类型
 *value:返回的数据
 *coordinates[]返回的数据坐标
----------*
+---------*/
 new CityPicker('#js-datetitmepicker',{
 	eventName:'click',
 	url:'../js/address.min.js',
@@ -148,7 +148,7 @@ new CityPicker('#js-datetitmepicker',{
 <h3>DatetimePicker用法</h3>
 <pre>
 <code>
-*config参数说明
+/*config参数说明
 *---------
 *container：必填项操作的DOM
 *type:类型（date：日期，datetime:时间，custom:自定义数据）
@@ -158,7 +158,7 @@ new CityPicker('#js-datetitmepicker',{
 *value:返回的数据
 *connector:连接符号
 *callback:返回的函数
----------*
+---------*/
 new DatetimePicker('#js-datetitmepicker',{
 	type:'date',
 	eventName:'click',
@@ -173,13 +173,13 @@ new DatetimePicker('#js-datetitmepicker',{
 <h3>Tab用法</h3>
 <pre>
 <code>
-*config参数说明
+/*config参数说明
 *---------
 *defaultIndex:默认项  
 *event:事件  
 *activeClass:选中class  
 *is_slide:是否可滑动  
----------*
+---------*/
 $('#js-tab1').tab({
 	defaultIndex : 0,
 	activeClass : 'ui-tab-red',
@@ -191,7 +191,7 @@ $('#js-tab1').tab({
 <h3>Range用法</h3>
 <pre>
 <code>
-*config参数说明
+/*config参数说明
 *---------
 *min:最大值 
 *max:最小值 
@@ -201,7 +201,7 @@ $('#js-tab1').tab({
 *starFn:callback
 *moveFn:callback
 *endFn:callback 
----------*
+---------*/
 $('#slider1').range({
 	min: 0,
 	max: 36,
