@@ -6,12 +6,16 @@
 <p><a href="https://myfirebug.github.io/ui/dist/html/index.html">https://myfirebug.github.io/ui/dist/html/index.html</a></p>
 <h2>使用</h2>
 <h3>Toast</h3>
-<blockquote>
-<p>在 Head 引入（CSS前面）</p>
-</blockquote>
+<p>简短的消息提示框，持续时间和icon样式。</p>
+<h4>基本用法</h4>
 <pre>
 <code>
-<link rel="stylesheet" href="css/widget/toast/toast.css">
+  Toast({
+    message: '提示',
+    icon:'fails',
+    duration: 5000
+  });
 </code>
 </pre>
+
 
