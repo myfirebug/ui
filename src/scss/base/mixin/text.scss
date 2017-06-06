@@ -1,0 +1,16 @@
+//单行文本溢出
+@mixin ellipsis($w:auto) {
+    width: $w;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+//多行文本溢出
+@mixin ellipsisLn($line) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+}

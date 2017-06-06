@@ -1,0 +1,55 @@
+@import '../../base/fn';
+
+/* 按钮 */
+$btnPrimaryBg						:#4577dc;
+$btnPrimaryActiveBg					:#375fb0;
+$btnPrimaryDisableBg 				:#acb2c1;
+$btnPrimaryHeight 					:1rem;
+$btnPrimaryFontColor				:#fff;
+$btnPrimaryFontSize					:.32rem;
+$btnPrimaryRadius 					:.03rem;
+
+/* 边框按钮 */
+$btnDefaultBg						:#fff;
+$btnDefaultActiveBg					:#ededed;
+$btnDefaultDisableBg 				:#fff;
+$btnDefaultFontColor				:#333;
+$btnDefaultDisableFontColor			:#acb2c1;
+$btnDefaultBorColor					:#acb2c1;
+
+.ui-btn{
+	display:block;
+	text-align:center;
+	height:$btnPrimaryHeight;
+	line-height:$btnPrimaryHeight;
+	color:$btnPrimaryFontColor;
+	font-size:$btnPrimaryFontSize;
+	border-radius:$btnPrimaryRadius;
+}
+.ui-btn-primary{
+	background:$btnPrimaryBg;
+	&:active{
+		background:$btnPrimaryActiveBg;
+	}
+}
+.ui-btn-primary-disable{
+	background:$btnPrimaryDisableBg;
+}
+
+.ui-btn-default{
+	color:$btnDefaultFontColor;
+	background:$btnDefaultBg;
+	&:after{
+		border-color:$btnDefaultBorColor;
+	}
+	&:active{
+		background: $btnDefaultActiveBg;
+	}
+}
+.ui-btn-default-disable{
+	color:$btnDefaultDisableFontColor;
+	background:$btnDefaultActiveBg;
+	&:after{
+		border-color:$btnDefaultBorColor;
+	}
+}

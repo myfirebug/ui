@@ -1,0 +1,21 @@
+@import '../../base/fn';
+
+.ui-cells{
+	font-size:$f34;
+	.ui-cell{
+		display:flex;
+		align-items:center;
+		min-height:1rem;
+		padding:0 .3rem;
+		&-bd{
+			flex:1;
+		}
+	}
+	.ui-cell-arrow{
+		.ui-cell-ft:after{
+			content: '';
+			display: inline-block;
+			@include setArrow(right , .15rem , $darkWeak, .04rem);
+		}
+	}
+}

@@ -1,0 +1,39 @@
+@import '../../base/fn';
+
+$toastBg 					:rgba(0,0,0,.8);
+$toastFontColor 			:#fff;
+$toastFontSize 				:.28rem;
+$toastRadius 				:.1rem;
+
+.ui-toast{
+	position: fixed;
+	left:50%;
+	top:50%;
+	min-width:2rem;
+	max-width:80%;
+	text-align:center;
+	font-size:$toastFontSize;
+	color:$toastFontColor;
+	background:$toastBg;
+	border-radius:$toastRadius;
+	opacity:0;
+	transition:all .25s ease 0s;
+	transform:translate(-50%,-50%);
+	&.show{
+		opacity: 1;
+	}
+	&.hide{
+		opacity: 0;
+	}
+	.icon{
+		display: block;
+		width: .8rem;
+		height: .8rem;
+		margin:.25rem auto 0 auto;
+		background:#eee;
+	}
+	.ui-toast-text{
+		display: block;
+		padding:.2rem .3rem;
+	}
+}

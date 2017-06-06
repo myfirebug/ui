@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title></title>
+	<!--公用样式start-->
+	<link rel="stylesheet" href="../css/base/reset.min.css">
+	<link rel="stylesheet" href="../css/widget/range/range.min.css">
+	<!--公用样式end-->
+	<!--公用js start-->
+	<script src="../js/scale_750.js"></script>
+	<!--公用js start-->
+	<style>
+	 h1{
+	 	font-size: .34rem;
+	 	padding: .2rem .4rem;
+	 	color: #999;
+	 }
+	</style>
+</head>
+<body  ontouchstart='' ontouchmove=''>
+<h1>可拖动ui-range</h1>
+<div class="ui-range">
+	<div class="ui-range-inner" id="slider1"></div>
+	<div class="ui-range-text text1">12</div>
+</div>
+
+<h1>可拖动ui-range</h1>
+<div class="ui-range">
+	<div class="ui-range-inner" id="slider2"></div>
+	<div class="ui-range-text text2">12</div>
+</div>
+
+
+<h1>不可拖动ui-range</h1>
+<div class="ui-range">
+	<div class="ui-range-inner" id="slider3"></div>
+	<div class="ui-range-text text3">12</div>
+</div>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/range.js"></script>
+<script>
+	$(function(){
+		$('#slider1').range({
+			min 			: 0,
+			max 			: 36,
+			step 			: 1,
+			defaultValue 	: 12,
+			startFn 		:function(value){
+				$('.text1').text(value + '月');
+			},
+			moveFn			: function(value){
+				$('.text1').text(value + '月');
+			},
+			endFn 			: function(value){
+
+			}
+		})
+		$('#slider2').range({
+			min 			: 0,
+			max 			: 100,
+			step 			: 1,
+			defaultValue 	: 100,
+			startFn 		:function(value){
+				$('.text2').text(value + '%');
+			},
+			moveFn			: function(value){
+				$('.text2').text(value + '%');
+			},
+			endFn 			: function(value){
+
+			}
+		})
+		$('#slider3').range({
+			min 			: 0,
+			max 			: 100,
+			step 			: 1,
+			defaultValue 	: 50,
+			disable 		:false,
+			startFn 		:function(value){
+				$('.text3').text(value + '%');
+			},
+			moveFn			: function(value){
+				$('.text3').text(value + '%');
+			},
+			endFn 			: function(value){
+
+			}
+		})
+	});
+</script>
+</body>
+</html>
+

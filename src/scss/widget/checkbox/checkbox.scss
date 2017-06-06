@@ -1,0 +1,70 @@
+@import '../../base/fn';
+
+.ui-checkbox{
+	position: relative;
+	display:inline-block;
+	width:.4rem;
+	height:.4rem;
+	background:#fff;
+	border-radius:50%;
+	vertical-align:middle;
+	box-sizing:border-box;
+	@at-root .ui-checkbox-text{
+		vertical-align: middle;
+	}
+	.ui-checkbox-inp{
+		position: absolute;
+		left:0;
+		top:0;
+		z-index:2;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		&:checked + .ui-checkbox-core{
+			&:after{
+				background:$blue;
+				border:1px solid $blue;
+			}
+			&:before{
+				transform:scale(1) rotate(-45deg);
+			}
+		}
+	}
+	.ui-checkbox-core{
+		position: absolute;
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		&:after,
+		&:before{
+			position: absolute;
+			content: '';
+			box-sizing:border-box;
+		}
+		&:after{
+			left:-1px;
+			top:-.04rem;
+			width: .4rem;
+			height: .4rem;
+			border-radius:50%;
+			border:1px solid #dfdfdf;
+			transition:all 0.05s ease 0s;
+		}
+		&:before{
+			z-index: 1;
+			left:.08rem;
+			top:.08rem;
+			width: .2rem;
+			height: .1rem;
+			border-left:1px solid #fff;
+			border-bottom:1px solid #fff;
+			transform:scale(0) rotate(-45deg);
+			transition:all .25s ease 0s;
+		}
+	}
+	.ui-checkbox-inp[disabled] + .ui-checkbox-core{
+		&:after{
+			background:#eee;
+		}
+	}
+}

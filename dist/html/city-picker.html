@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title></title>
+	<!--公用样式start-->
+	<link rel="stylesheet" href="../css/base/reset.min.css">
+	<link rel="stylesheet" href="../css/widget/button/button.min.css">
+	<link rel="stylesheet" href="../css/widget/datetimePicker/datetimePicker.min.css">
+	<!--公用样式end-->
+	<!--公用js start-->
+	<script src="../js/scale_750.js"></script>
+	<!--公用js start-->
+	<style>
+		body{
+			padding: 0 .3rem;
+		}
+		.ui-btn{
+			margin-top: .2rem;
+		}
+	</style>
+</head>
+<body  ontouchstart='' ontouchmove=''>
+<a href="javascript:;" class="ui-btn ui-btn-default ui-border-radius" id="js-datetitmepicker1">请选择地址</a>
+<!-- <div class="ui-picker-wrap hide" style="display:none">
+	<div class="mask"></div>
+	<div class="ui-picker">
+		<div class="ui-picker-hd ui-border-b">
+			<span class="ui-picker-cancel">取消</span><span class="ui-picker-confirm">确定</span>
+		</div>
+		<div class="ui-picker-bd">
+			<div class="ui-picker-slot" id="js_year">
+				<div class="ui-picker-gradient" style="display:none"></div>
+				<ul class="ui-picker-list">
+					<li class="ui-picker-item">2011</li>
+					<li class="ui-picker-item">2012</li>
+					<li class="ui-picker-item">2013</li>
+					<li class="ui-picker-item">2014</li>
+					<li class="ui-picker-item">2015</li>
+					<li class="ui-picker-item">2016</li>
+					<li class="ui-picker-item">2017</li>
+					<li class="ui-picker-item">2018</li>
+					<li class="ui-picker-item">2019</li>
+					<li class="ui-picker-item">2020</li>
+					<li class="ui-picker-item">2022</li>
+				</ul>
+			</div>
+			<div class="ui-picker-slot" id="js_mouth">
+				<div class="ui-picker-gradient"  style="display:none"></div>
+				<ul class="ui-picker-list">
+					<li class="ui-picker-item">01</li>
+					<li class="ui-picker-item">02</li>
+					<li class="ui-picker-item">03</li>
+					<li class="ui-picker-item">04</li>
+					<li class="ui-picker-item">05</li>
+					<li class="ui-picker-item">06</li>
+					<li class="ui-picker-item">07</li>
+					<li class="ui-picker-item">08</li>
+					<li class="ui-picker-item">09</li>
+					<li class="ui-picker-item">10</li>
+					<li class="ui-picker-item">11</li>
+					<li class="ui-picker-item">12</li>
+				</ul>
+			</div>
+			<div class="ui-picker-slot" id="js_day">
+				<div class="ui-picker-gradient" style="display:none"></div>
+				<ul class="ui-picker-list">
+					<li class="ui-picker-item">01</li>
+					<li class="ui-picker-item">02</li>
+					<li class="ui-picker-item">03</li>
+					<li class="ui-picker-item">04</li>
+					<li class="ui-picker-item">05</li>
+					<li class="ui-picker-item">06</li>
+					<li class="ui-picker-item">07</li>
+					<li class="ui-picker-item">08</li>
+					<li class="ui-picker-item">09</li>
+					<li class="ui-picker-item">10</li>
+					<li class="ui-picker-item">11</li>
+					<li class="ui-picker-item">12</li>
+					<li class="ui-picker-item">13</li>
+					<li class="ui-picker-item">14</li>
+					<li class="ui-picker-item">15</li>
+					<li class="ui-picker-item">16</li>
+					<li class="ui-picker-item">17</li>
+					<li class="ui-picker-item">18</li>
+					<li class="ui-picker-item">19</li>
+					<li class="ui-picker-item">20</li>
+					<li class="ui-picker-item">21</li>
+					<li class="ui-picker-item">22</li>
+					<li class="ui-picker-item">23</li>
+					<li class="ui-picker-item">24</li>
+					<li class="ui-picker-item">25</li>
+					<li class="ui-picker-item">26</li>
+					<li class="ui-picker-item">27</li>
+					<li class="ui-picker-item">28</li>
+					<li class="ui-picker-item">29</li>
+					<li class="ui-picker-item">30</li>
+				</ul>
+			</div>
+		</div>
+		<div class="ui-picker-ft ui-border-tb"></div>
+	</div>
+</div> -->
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/swiper.js"></script>
+<script src="../js/cityPicker.js"></script>
+ <script>
+	$(function(){
+		new CityPicker('#js-datetitmepicker1',{
+			selectedClass:'cblue'
+		});
+	});
+</script>
+</body>
+</html>
+

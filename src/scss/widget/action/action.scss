@@ -1,0 +1,72 @@
+@import '../../base/fn';
+
+$actionBg 				:#f8f8f8;
+$actionFontSize			:.3rem;
+$activeBg				:#ddd;
+$actionHdFontColor 		:#666;
+$actionLineHeight 		:.9rem;
+$maskBg 				:rgba(0,0,0,.8);
+
+.ui-action{
+	position: fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:1000;
+	font-size:$actionFontSize;
+	line-height:$actionLineHeight;
+	&.show{
+		.ui-action-mask{
+			opacity: 1;
+		}
+		.ui-action-sheet{
+			transform: translateY(0);
+		}
+	}
+	&.hide{
+		.ui-action-mask{
+			opacity: 0;
+		}
+		.ui-action-sheet{
+			transform: translateY(100%);
+		}
+	}
+	a{
+		&:active{
+			background:$activeBg
+		}
+	}
+	.ui-action-mask{
+		width: 100%;
+		height: 100%;
+		background:$maskBg; 
+		opacity: 0;
+		transition:all .25s ease 0s;
+	}
+	.ui-action-sheet{
+		position: absolute;
+		left:0;
+		right: 0;
+		bottom:0;
+		background:$actionBg;
+		transition:all .25s ease 0s;
+		transform: translateY(100%);
+	}
+	.ui-action-sheet-hd{
+		color:$actionHdFontColor;
+		background:$actionBg;
+		text-align:center;
+	}
+	.ui-action-sheet-item{
+		display: block;
+		background:#fff;
+		text-align:center;
+	}
+	.ui-action-sheet-cancel{
+		margin-top:.2rem;
+		display: block;
+		background:#fff;
+		text-align:center;
+	}
+}

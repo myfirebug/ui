@@ -1,0 +1,72 @@
+@import '../../base/fn';
+
+.ui-radio{
+	position: relative;
+	display:inline-block;
+	width:.4rem;
+	height:.4rem;
+	background:#fff;
+	border-radius:50%;
+	vertical-align:middle;
+	box-sizing:border-box;
+	@at-root .ui-radio-text{
+		vertical-align: middle;
+	}
+	.ui-radio-inp{
+		position: absolute;
+		left:0;
+		top:0;
+		z-index:2;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		&:checked + .ui-radio-core{
+			&:after{
+				background:$blue;
+				border-color:$blue;
+			}
+			&:before{
+				transform:scale(1);
+			}
+		}
+	}
+	.ui-radio-core{
+		position: absolute;
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		&:after,
+		&:before{
+			position: absolute;
+			content: '';
+			box-sizing:border-box;
+		}
+		&:after{
+			left:-1px;
+			top:-.04rem;
+			width: .4rem;
+			height: .4rem;
+			border-radius:50%;
+			
+			border:1px solid #dfdfdf;
+			transition:all 0.05s ease 0s;
+		}
+		&:before{
+			z-index: 1;
+			left:.12rem;
+			top:.11rem;
+			width: .12rem;
+			height: .12rem;
+			background: #fff;
+			border-radius:50%;
+			transform:scale(0);
+			transition:all 0.25s ease 0s;
+		}
+	}
+	.ui-radio-inp[disabled] + .ui-radio-core{
+		&:after{
+			background:#eee;
+		}
+		
+	}
+}

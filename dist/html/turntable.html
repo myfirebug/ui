@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title></title>
+	<link rel="stylesheet" href="../css/base/reset.min.css">
+	<script src="../js/scale_750.js"></script>
+</head>
+<body>
+<style>
+	html,body{
+		background: #4577dc;
+		text-align: center;
+		color: #fff;
+		font-size: .32rem;
+	}
+	#zhuanpan {
+	    margin: 0 auto;
+	    overflow: hidden;
+	    position: relative;
+	    width: 90%;
+	    z-index: 2;
+	}
+	img {
+	    color: transparent;
+	    font-size: 0;
+	    max-width: 100%;
+	    vertical-align: middle;
+	}
+	.point{
+		display: inline-block;
+	    cursor: pointer;
+	    height: 1.77rem;
+	    left: 50%;
+	    margin-left: -.685rem;
+	    margin-top: -.885rem;
+	    position: absolute;
+	    top: 50%;
+	    width: 1.37rem;
+	    background: url("../images/Pointer1.png") no-repeat;
+	    background-size: 100%100%;
+	    z-index: 111;
+	}
+	.point-disable{
+		background: url("../images/Pointer2.png") no-repeat;
+		background-size: 100%100%;
+	}
+</style>
+<span class="coud_num">5</span>
+<div id="zhuanpan">
+      <img id="img" class="rotary-table" src="../images/four_zhuanpan.png">
+      <a href="javascript:;" id="tip" class="point"></a>
+  </div>
+  <p class="result"></p>
+  <script src="../js/jquery-1.11.1.min.js"></script>
+  <!-- <script src="1.js"></script> -->
+  <script src="../js/turntable.js"></script>
+  <script>
+  	$(function(){
+  		new Turntable('#zhuanpan',{
+  			turntable:'#img',
+  			pointer:'#tip',
+  			type:1,
+  			during:2,
+  			callback:function(num,msg){
+  				$('.coud_num').html(num);
+  				$('.result').html(msg);
+  			}
+  		});
+  	});
+  </script>
+</body>
+</html>

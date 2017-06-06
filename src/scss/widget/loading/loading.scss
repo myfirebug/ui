@@ -1,0 +1,189 @@
+@import '../../base/fn';
+.ui-loading{
+	/* ui-loading-one */
+	.ui-loading-one{
+		position: relative;
+		margin:0 auto;
+		width:.6rem;
+		height:.6rem;
+		&:before{
+			content: '';
+			position: absolute;
+			left:0;
+			top:0;
+			width: .6rem;
+			height: .6rem;
+			border:.06rem solid rgba(0,0,0,.1);
+			border-radius:50%;
+			box-sizing:border-box;
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			left:0;
+			top:0;
+			width: .6rem;
+			height: .6rem;
+			border:.06rem solid transparent;
+			border-left-color:#fff;;
+			border-radius:50%;
+			box-sizing:border-box;
+			animation:ui-loading-rotate 1s infinite linear;
+		}
+	}
+	.ui-loading-text{
+		font-size: $f24;
+		color:#fff;;
+	}
+	/* ui-loading-two */
+	.ui-loading-two{
+		margin:0 auto;
+		width:.6rem;
+		height:.6rem;
+		border:.06rem solid #fff;;
+		border-right-color:transparent;
+		box-sizing:border-box;
+		border-radius:50%;
+		animation:ui-loading-rotate 1s infinite linear;
+	}
+	/* ui-loading-three */
+	.ui-loading-three{
+		position: relative;
+		margin:0 auto;
+		width:.6rem;
+		height:.6rem;
+		&:before,
+		&:after{
+			content: '';
+			position: absolute;
+			left:0;
+			top:0;
+			width: .6rem;
+			height: .6rem;
+			opacity: 0;
+			background:#fff;
+			border-radius:50%;
+			animation:ui-loading-three 2s infinite ease-in-out;
+		}
+		&:before{
+			animation-delay:1s;
+		}
+	}
+	/* ui-loading-four */
+	.ui-loading-four{
+		width: .6rem;
+		height: .6rem;
+		margin:0 auto;
+		.circle1,
+		.circle2,
+		.circle3{
+			margin:.22rem 1px 0 1px;
+			display: inline-block;
+			width: .16rem;
+			height: .16rem;
+			background:#fff;
+			border-radius:50%;
+			opacity: 0;
+			animation:ui-loading-four 0.9s infinite ease-in-out;
+		}
+		.circle2{
+			animation-delay:.3s
+		}
+		.circle3{
+			animation-delay:.6s
+		}
+	}
+	/* ui-loading-five */
+	.ui-loading-five{
+		position: relative;
+		width: .6rem;
+		height: .6rem;
+		margin:0 auto;
+		animation:ui-loading-rotate 1s infinite linear;
+		.circle1,
+		.circle2,
+		.circle3,
+		.circle4,
+		.circle5,
+		.circle6,
+		.circle7,
+		.circle8,
+		.circle9,
+		.circle10,
+		.circle11,
+		.circle12{
+			position: absolute;
+			left:0;
+			top:0;
+			display: inline-block;
+			width: .6rem;
+			height: .6rem;
+			
+			&:after{
+				content: '';
+				position: absolute;
+				left:.28rem;
+				top:0;
+				width: .04rem;
+				height: .1rem;
+				background:#fff;
+				border-radius:.04rem;
+			}
+		}
+		@for $i from 1 through 12 {
+			.circle#{$i} {
+				transform:rotate(30 * $i + deg);
+				opacity:0.083 * $i;
+			}
+		}
+	}
+		
+}
+
+@keyframes ui-loading-rotate{
+	0% {
+		transform:rotate(0deg)
+	}
+	100% {
+		transform:rotate(360deg)
+	}
+}
+
+@keyframes ui-loading-three{
+	0% {
+		opacity: .6;
+		transform:scale(0);
+	}
+	50% {
+		opacity: .6;
+		transform:scale(1);
+	}
+	100% {
+		opacity: .6;
+		transform:scale(0);
+	}
+}
+
+@keyframes ui-loading-four{
+	0% {
+		opacity: 1;
+		transform:scale(0);
+	}
+	50% {
+		opacity: 1;
+		transform:scale(1);
+	}
+	100% {
+		opacity: 1;
+		transform:scale(0);
+	}
+}
+
+@keyframes ui-loading-five{
+	0% {
+		opacity: 0.12;
+	}
+	100% {
+		opacity: 1;
+	}
+}

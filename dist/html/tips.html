@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title></title>
+	<!--公用样式start-->
+	<link rel="stylesheet" href="../css/base/reset.min.css">
+	<link rel="stylesheet" href="../css/widget/button/button.min.css">
+	<link rel="stylesheet" href="../css/widget/tips/tips.min.css">
+	<!--公用样式end-->
+	<!--公用js start-->
+	<script src="../js/scale_750.js"></script>
+	<!--公用js start-->
+	<style>
+		body{
+			padding: 0 .3rem;
+		}
+		.ui-btn{
+			margin-top: .2rem;
+		}
+	</style>
+</head>
+<body  ontouchstart='' ontouchmove=''>
+<a href="javascript:;" class="ui-btn ui-btn-default ui-border-radius" id="js-tops">tips</a>
+
+<!-- <div class="ui-tips">密码错误！</div> -->
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/tips.js"></script>
+<script>
+	$(function(){
+		$('#js-tops').on('click',function(){
+			$.tip({
+				text : '用户名或者密码错误！'
+			});
+		});
+	});
+</script>
+</body>
+</html>
+

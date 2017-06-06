@@ -1,0 +1,17 @@
+@mixin setArrow($arrowDir, $arrowSize, $arrowColor,$borderWidth){
+	display: inline-block;
+    height: $arrowSize;
+    width: $arrowSize;
+    border-width: $borderWidth $borderWidth 0 0;
+    border-color: $arrowColor;
+    border-style: solid;
+    @if $arrowDir == top {
+    	transform:rotate(-45deg);
+    } @else if $arrowDir == right {
+    	transform:rotate(45deg);
+    } @else if $arrowDir == bottom {
+    	transform:rotate(135deg);
+    }@else if $arrowDir == bottom {
+    	transform:rotate(-135deg);
+    }
+}

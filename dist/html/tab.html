@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title></title>
+	<!--公用样式start-->
+	<link rel="stylesheet" href="../css/base/reset.min.css">
+	<link rel="stylesheet" href="../css/widget/tab/tab.min.css">
+	<!--公用样式end-->
+	<!--公用js start-->
+	<script src="../js/scale_750.js"></script>
+	<!--公用js start-->
+</head>
+<body  ontouchstart='' ontouchmove=''>
+<div class="ui-tab" id="js-tab1">
+	<ul class="ui-tab-nav ui-border-b">
+		<li class="ui-tab-nav-item ui-tab-red">已发货</li>
+		<li class="ui-tab-nav-item">未发货</li>
+		<li class="ui-tab-nav-item">全部订单</li>
+	</ul>
+	<div class="ui-tab-content">
+		<div class="ui-tab-content-item" style="display:block">我是选一的内容</div>
+		<div class="ui-tab-content-item">我是选二的内容</div>
+		<div class="ui-tab-content-item">我是选三的内容</div>
+	</div>
+</div>
+<div class="ui-tab" id="js-tab2">
+	<ul class="ui-tab-nav ui-border-b">
+		<li class="ui-tab-nav-item ui-tab-red">选项一</li>
+		<li class="ui-tab-nav-item">选项二</li>
+		<li class="ui-tab-nav-item">选项三</li>
+		<li class="ui-tab-nav-item">选项四</li>
+		<li class="ui-tab-nav-item">选项五</li>
+	</ul>
+	<div class="ui-tab-content">
+		<div class="ui-tab-content-item" style="display:block">我是选一的内容</div>
+		<div class="ui-tab-content-item">我是选二的内容</div>
+		<div class="ui-tab-content-item">我是选三的内容</div>
+		<div class="ui-tab-content-item">我是选四的内容</div>
+		<div class="ui-tab-content-item">我是选五的内容</div>
+	</div>
+</div>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/tab.js"></script>
+<script>
+$(function(){
+	$('#js-tab1').tab({
+		defaultIndex : 0,
+		activeClass : 'ui-tab-red',
+		is_slide : true
+	});
+	$('#js-tab2').tab({
+		defaultIndex : 2,
+		activeClass : 'ui-tab-red'
+	});
+});
+</script>
+</body>
+</html>
+

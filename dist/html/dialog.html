@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title></title>
+	<!--公用样式start-->
+	<link rel="stylesheet" href="../css/base/reset.min.css">
+	<link rel="stylesheet" href="../css/widget/button/button.min.css">
+	<link rel="stylesheet" href="../css/widget/dialog/dialog.min.css">
+	<!--公用样式end-->
+	<!--公用js start-->
+	<script src="../js/scale_750.js"></script>
+	<!--公用js start-->
+	<style>
+		body{
+			padding: 0 .3rem;
+		}
+		.ui-btn{
+			margin-top: .2rem;
+		}
+	</style>
+</head>
+<body  ontouchstart='' ontouchmove=''>
+<a href="javascript:;" class="ui-btn ui-btn-default ui-border-radius" id="js-dialog1">带标题dialog</a>
+<a href="javascript:;" class="ui-btn ui-btn-default ui-border-radius" id="js-dialog2">不带标题dialog</a>
+<a href="javascript:;" class="ui-btn ui-btn-default ui-border-radius" id="js-dialog3">dialog多按钮点击最后一个按钮弹出alert</a>
+
+<div class="ui-dialog-wrap" style="display:none">
+	<div class="mask"></div>
+	<div class="ui-dialog">
+		<div class="ui-dialog-hd">werer</div>
+		<div class="ui-dialog-bd">werwer</div>
+		<div class="ui-dialog-ft"><a class="btn-item">123</a></div>
+	</div>
+</div>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/dialog.js"></script>
+<script>
+	$(function(){
+		$('#js-dialog1').on('click',function(){
+			$.dialog({
+				title: '温馨提示',
+				message:'你这又是唱的那一出吖！！求指教',
+				buttons: [
+					{
+						text :'我已经了解了'
+					}
+				]
+			})
+		});
+		$('#js-dialog2').on('click',function(){
+			$.dialog({
+				message:'你这又是唱的那一出吖！！求指教',
+				buttons: [
+					{
+						text :'我已经了解了'
+					}
+				]
+			})
+		});
+		$('#js-dialog3').on('click',function(){
+			$.dialog({
+				message:'确认删除么？',
+				buttons: [
+					{
+						text :'取消'
+					},
+					{
+						text :'确认',
+						callback: function(){
+							alert(122);
+						}
+					}
+				]
+			})
+		});
+	});
+</script>
+
+</script>
+</body>
+</html>
+

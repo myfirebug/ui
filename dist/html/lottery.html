@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title></title>
+	<!--公用样式start-->
+	<link rel="stylesheet" href="../css/base/reset.min.css">
+	<script src="../js/scale_750.js"></script>
+</head>
+<body  ontouchstart='' ontouchmove=''>
+<style>
+	.lottery-wrapper{
+
+	}
+	.lottery-wrapper li{
+		position: relative;
+		float: left;
+		width: 33.3333%;
+		height: 2.2rem;
+		background: #e0d090;
+	}
+	.lottery-wrapper .lottery-btn{
+		background:#4577dc;
+	}
+	.lottery-wrapper .active:after{
+		position: absolute;
+		left: 0;
+		top: 0;
+		content: '';
+		width: 100%;
+		height: 100%;
+		background: url('../images/10.png') no-repeat;
+		background-size: 100% 100%;
+	}
+
+</style>
+<ul class="lottery-wrapper" id="lottery">
+	<li class="lottery-unit lottery-unit-0"><img src="../images/1.jpg" alt=""></li>
+	<li class="lottery-unit lottery-unit-1"><img src="../images/2.jpg" alt=""></li>
+	<li class="lottery-unit lottery-unit-2"><img src="../images/3.jpg" alt=""></li>
+	<li class="lottery-unit lottery-unit-7"><img src="../images/8.jpg" alt=""></li>
+	<li class="lottery-btn"><img src="../images/9.jpg" alt=""></li>
+	<li class="lottery-unit lottery-unit-3"><img src="../images/4.jpg" alt=""></li>
+	<li class="lottery-unit lottery-unit-6"><img src="../images/7.jpg" alt=""></li>
+	<li class="lottery-unit lottery-unit-5"><img src="../images/6.jpg" alt=""></li>
+	<li class="lottery-unit lottery-unit-4"><img src="../images/5.jpg" alt=""></li>
+</ul>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/lottery.js"></script>
+</body>
+</html>
+

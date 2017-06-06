@@ -1,0 +1,57 @@
+@import '../../base/fn';
+
+/* ui-switch */
+.ui-switch{
+	position: relative;
+	width: 1.04rem;
+  	height: .64rem;
+  	border-radius:.32rem;
+  	background:$blue;
+  	.ui-switch-inp{
+  		position: absolute;
+  		left:0;
+  		top:0;
+  		z-index:2;
+  		width: 100%;
+  		height: 100%;
+  		opacity: 0;
+  		&:checked + .ui-switch-core{
+  			&:before{
+  				transform: translateX(.41rem);
+  			}
+  			&:after{
+  				transform: scale(0);
+  			}
+  		}
+  	}
+  	.ui-switch-core{
+  		position: relative;
+  		display: inline-block;
+  		width: 100%;
+  		height: 100%;
+  		&:after,
+  		&:before{
+  			content: '';
+  			position: absolute;
+  			left:0;
+  			top:0;
+  			height: .6rem;
+  		}
+  		&:after{
+  			width: 100%;
+  			border-radius: .32rem;
+  			border:1px solid #dfdfdf;
+  			background-color: #fdfdfd;
+  			transition:.35s cubic-bezier(.45,1,.4,1);
+  		}
+  		&:before{
+  			top:1px;
+  			z-index:1;
+  			width: .6rem;
+  			background:#fff;
+  			border-radius:50%;
+  			box-shadow: 0 1px 3px rgba(0,0,0,.4);
+  			transition:.35s cubic-bezier(.4,.4,.25,1.35);
+  		}
+  	}
+}

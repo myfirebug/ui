@@ -1,0 +1,14 @@
+@import '../../base/fn';
+
+.ui-tips{
+	position: fixed;
+	left:0;
+	top:0;
+	width:100%;
+	text-align:center;
+	line-height:.84rem;
+	font-size:$f26;
+	background:#fff0f0;
+	transform:translateY(-100%); 
+	transition: all 0.25s ease 0s;
+}

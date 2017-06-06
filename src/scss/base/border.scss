@@ -1,0 +1,136 @@
+@import './fn';
+
+.ui-border-t{
+	@include bor_t($borDefault);
+}
+.ui-border-b{
+	@include bor_b($borDefault);
+}
+.ui-border-l{
+	@include bor_l($borDefault);
+}
+.ui-border-r{
+	@include bor_r($borDefault);
+}
+.ui-border-tb{
+	@include bor_tb($borDefault);
+}
+.ui-border-radius{
+	@include bor_all($borDefault,$borDefaultRadius);
+}
+@media screen and (-webkit-min-device-pixel-ratio : 2) {
+	.ui-border-t,
+	.ui-border-b,
+	.ui-border-tb,
+	.ui-border-l,
+	.ui-border-r,
+	.ui-border-radius
+	{
+		border:none;
+		position: relative;
+		overflow: hidden;
+	}
+	.ui-border-t:after,
+	.ui-border-b:after,
+	.ui-border-tb:after,
+	.ui-border-tb:before,
+	.ui-border-l:after,
+	.ui-border-r:after
+	{
+		content: '';
+		position: absolute;
+		box-sizing:border-box;
+		pointer-events: none;
+	}
+	.ui-border-t:after,
+	.ui-border-tb:after{
+		left:0;
+		top:0;
+		width: 100%;height: 1px;
+		transform:scaleY(0.5);
+		transform-origin:left top;
+		background:$borDefault;
+	}
+	.ui-border-b:after,
+	.ui-border-tb:before{
+		left:0;
+		bottom:0;
+		width: 100%;height: 1px;
+		transform:scaleY(0.5);
+		transform-origin:left bottom;
+		background:$borDefault;
+	}
+	.ui-border-l:after{
+		left:0;
+		top:0;
+		width: 1px;height: 100%;
+		transform:scaleX(0.5);
+		transform-origin:left top;
+		background:$borDefault;
+	}
+	.ui-border-r:after{
+		right:0;
+		top:0;
+		width: 1px;height: 100%;
+		transform:scaleX(0.5);
+		transform-origin:left top;
+		background:$borDefault;
+	}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio : 3) {
+	.ui-border-t,
+	.ui-border-b,
+	.ui-border-tb,
+	.ui-border-l,
+	.ui-border-r,
+	.ui-border-radius{
+		border:none;
+		position: relative;
+	}
+	.ui-border-t:after,
+	.ui-border-b:after,
+	.ui-border-tb:after,
+	.ui-border-tb:before,
+	.ui-border-l:after,
+	.ui-border-r:after{
+		content: '';
+		position: absolute;
+		box-sizing:border-box;
+		pointer-events: none;
+	}
+	.ui-border-t:after,
+	.ui-border-tb:after{
+		left:0;
+		top:0;
+		width: 100%;height: 1px;
+		transform:scaleY(0.33);
+		transform-origin:0 0;
+		background:$borDefault;
+	}
+	.ui-border-b:after,
+	.ui-border-tb:before{
+		left:0;
+		bottom:0;
+		width: 100%;height: 1px;
+		transform:scaleY(0.33);
+		transform-origin:0 100%;
+		background:$borDefault;
+	}
+	.ui-border-l:after{
+		left:0;
+		top:0;
+		width: 1px;height: 100%;
+		transform:scaleX(0.33);
+		transform-origin:0 0;
+		background:$borDefault;
+	}
+	.ui-border-r:after{
+		right:0;
+		top:0;
+		width: 1px;height: 100%;
+		transform:scaleX(0.33);
+		transform-origin:0 0;
+		background:$borDefault;
+	}
+}

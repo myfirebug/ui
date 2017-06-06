@@ -1,0 +1,34 @@
+/* 1px边框 */
+@mixin bor_t($borDefault){
+    border-top:1px solid $borDefault;
+}
+@mixin bor_b($borDefault){
+    border-bottom:1px solid $borDefault;
+}
+@mixin bor_l($borDefault){
+    border-left:1px solid $borDefault;
+}
+@mixin bor_r($borDefault){
+    border-right:1px solid $borDefault;
+}
+@mixin bor_tb($borDefault){
+    border-top:1px solid $borDefault;
+    border-bottom:1px solid $borDefault;
+}
+@mixin bor_all($borDefault,$borDefaultRadius){
+    border:none;
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        box-sizing:border-box;
+        pointer-events: none;
+        left:0;
+        top:0;
+        width: 200%;height: 200%;
+        transform:scale(0.5);
+        transform-origin:left top;
+        border:1px solid $borDefault;
+        border-radius: $borDefaultRadius;
+    }
+}

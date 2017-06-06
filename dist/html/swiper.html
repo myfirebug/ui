@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title></title>
+	
+	<!--公用样式start-->
+	<link rel="stylesheet" href="../css/base/reset.min.css">
+	<link rel="stylesheet" href="../css/widget/swiper/swiper.min.css">
+	<!--公用样式end-->
+	<script src="../js/scale_750.js"></script>
+	<!--公用js start-->
+	<style>
+		.swiper-slide{
+			line-height: 3rem;
+			text-align: center;
+			font-size: 50px;
+			color: #fff;
+		}
+	</style>
+</head>
+<body  ontouchstart='' ontouchmove=''>
+<h2>swiper1</h2>
+<div class="swiper-container" id="swiper-container1" style="height: 3rem">
+	<ul class="swiper-wrapper">
+		<li class="swiper-slide" style="background:#4577dc">1</li>
+		<li class="swiper-slide" style="background:gray">2</li>
+		<li class="swiper-slide" style="background:#4577dc">3</li>
+		<li class="swiper-slide" style="background:gray">4</li>
+	</ul>
+	<div class="swiper-pagination">
+		<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+		<span class="swiper-pagination-bullet"></span>
+		<span class="swiper-pagination-bullet"></span>
+		<span class="swiper-pagination-bullet"></span>
+	</div>
+</div>
+<h2>swiper2</h2>
+<div class="swiper-container" id="swiper-container2" style="height: 3rem">
+	<ul class="swiper-wrapper">
+		<li class="swiper-slide" style="background:#4577dc">1</li>
+		<li class="swiper-slide" style="background:gray">2</li>
+		<li class="swiper-slide" style="background:#4577dc">3</li>
+		<li class="swiper-slide" style="background:gray">4</li>
+	</ul>
+	<div class="swiper-pagination">
+		<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+		<span class="swiper-pagination-bullet"></span>
+		<span class="swiper-pagination-bullet"></span>
+		<span class="swiper-pagination-bullet"></span>
+	</div>
+</div>
+<!-- <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script> -->
+<script src="../js/zepto.min.js"></script>
+<script src="../js/swiper.js"></script>
+<script>
+$(function(){
+	new Swiper('#swiper-container1',{
+		direction : 'horizontal',
+		initialSlide:2,
+		autoplay:5000,
+		pagination:'.swiper-pagination',
+	});
+
+	new Swiper('#swiper-container2',{
+		direction : 'vertical',
+		initialSlide:0,
+		autoplay:4000,
+		pagination:'.swiper-pagination'
+	});
+});
+
+</script>
+</body>
+</html>
+
