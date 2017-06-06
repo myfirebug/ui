@@ -5,16 +5,76 @@
 <h2>演示</h2>
 <p><a href="https://myfirebug.github.io/ui/dist/html/index.html">https://myfirebug.github.io/ui/dist/html/index.html</a></p>
 <h2>使用</h2>
-<h3>Toast</h3>
-<p>简短的消息提示框，持续时间和icon样式。</p>
-<h4>基本用法</h4>
+<h3>Toast用法</h3>
 <pre>
 <code>
-  Toast({
-    message: '提示',
-    icon:'fails',
-    duration: 5000
-  });
+Toast({
+  message: '提示',
+  icon:'fails',
+  duration: 5000
+});
+或者：
+$.toast({
+  message: '提示',
+  icon:'fails',
+  duration: 5000
+});
+</code>
+</pre>
+<h3>Action用法</h3>
+<pre>
+<code>
+Actions({
+  title: '选择操作',
+  mask:true,
+  actions:[
+		{
+			text:'列表1',
+			callBack:function(){
+				alert('我是列表1');
+			}
+		},
+		{
+			text:'列表2',
+			callBack:function(){
+				alert('我是列表2');
+			}
+		},
+		{
+			text:'列表3',
+			callBack:function(){
+				alert('我是列表3');
+			}
+		}
+	]
+
+});
+或者：
+$.actions({
+  title: '选择操作',
+  mask:true,
+  actions:[
+		{
+			text:'列表1',
+			callBack:function(){
+				alert('我是列表1');
+			}
+		},
+		{
+			text:'列表2',
+			callBack:function(){
+				alert('我是列表2');
+			}
+		},
+		{
+			text:'列表3',
+			callBack:function(){
+				alert('我是列表3');
+			}
+		}
+	]
+
+});
 </code>
 </pre>
 
