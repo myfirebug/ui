@@ -10,5 +10,5 @@
 <p>在 Head 引入（CSS前面）</p>
 </blockquote>
 <pre>
-<link rel="stylesheet" href="css/widget/toast/toast.css">
+<code><link rel="stylesheet" href="css/widget/toast/toast.css"></code>
 </pre>
