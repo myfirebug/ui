@@ -28,12 +28,12 @@ Toast({
 <h3>Action用法</h3>
 <pre>
 <code>
-<span color="#999">/*config参数说明</span>
-<span color="#999">*---------</span>
-<span color="#999">*title:标题</span>
-<span color="#999">*mask:是否有遮罩</span>
-<span color="#999">*actions:列表</span>
-<span color="#999">---------*/</span>
+<span style="color:#999">/*config参数说明</span>
+<span style="color:#999">*---------</span>
+<span style="color:#999">*title:标题</span>
+<span style="color:#999">*mask:是否有遮罩</span>
+<span style="color:#999">*actions:列表</span>
+<span style="color:#999">---------*/</span>
 Actions({
   title: '选择操作',
   mask:true,
