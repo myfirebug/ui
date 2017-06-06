@@ -71,5 +71,56 @@ Dialog({
 });
 </code>
 </pre>
+<h3>Swiper用法</h3>
+<pre>
+<code>
+Dialog('#swiper-container',{
+	wrapper: '.swiper-wrapper',
+	slide: '.swiper-slide',
+	initialSlide:5,
+	direction: 'horizontal',
+	autoplay: 5000,
+	pagination: '.swiper-pagination',
+	startFn: function(){},
+	endFn: function(){}
+});
+</code>
+</pre>
+<h3>CityPicker用法</h3>
+<pre>
+<code>
+CityPicker('#js-datetitmepicker',{
+	eventName:'click',
+	url:'../js/address.min.js',
+	value:[],
+	selectedClass:'.c-gray',
+	coordinates:[0,0,0]
+});
+</code>
+</pre>
+<h3>DatetimePicker用法</h3>
+<pre>
+<code>
+*config参数说明
+*---------
+*container：必填项操作的DOM
+*type:类型（date：日期，datetime:时间，custom:自定义数据）
+*eventName:事件类型
+*cols:数据
+*selectedClass 有值时按钮的样式
+*value:返回的数据
+*connector:连接符号
+*callback:返回的函数
+
+DatetimePicker('#js-datetitmepicker',{
+	type:'date',
+	eventName:'click',
+	cols: cols,
+	selectedClass:'',
+	connector:'-',
+	callBack:function(){}
+});
+</code>
+</pre>
 
 
