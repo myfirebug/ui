@@ -199,17 +199,17 @@ $('#js-tab1').tab({
 *endFn:callback 
 ---------*
 $('#slider1').range({
-	min 			: 0,
-	max 			: 36,
-	step 			: 1,
-	defaultValue 	: 12,
-	startFn 		:function(value){
+	min: 0,
+	max: 36,
+	step: 1,
+	defaultValue: 12,
+	startFn:function(value){
 		$('.text1').text(value + '月');
 	},
-	moveFn			: function(value){
+	moveFn: function(value){
 		$('.text1').text(value + '月');
 	},
-	endFn 			: function(value){
+	endFn: function(value){
 
 	}
 })
