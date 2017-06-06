@@ -13,44 +13,12 @@ Toast({
   icon:'fails',
   duration: 5000
 });
-或者：
-$.toast({
-  message: '提示',
-  icon:'fails',
-  duration: 5000
-});
 </code>
 </pre>
 <h3>Action用法</h3>
 <pre>
 <code>
 Actions({
-  title: '选择操作',
-  mask:true,
-  actions:[
-		{
-			text:'列表1',
-			callBack:function(){
-				alert('我是列表1');
-			}
-		},
-		{
-			text:'列表2',
-			callBack:function(){
-				alert('我是列表2');
-			}
-		},
-		{
-			text:'列表3',
-			callBack:function(){
-				alert('我是列表3');
-			}
-		}
-	]
-
-});
-或者：
-$.actions({
   title: '选择操作',
   mask:true,
   actions:[
