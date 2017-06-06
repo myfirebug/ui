@@ -166,4 +166,54 @@ new DatetimePicker('#js-datetitmepicker',{
 </code>
 </pre>
 
+<h3>Tab用法</h3>
+<pre>
+<code>
+*config参数说明
+*---------
+*defaultIndex:默认项  
+*event:事件  
+*activeClass:选中class  
+*is_slide:是否可滑动  
+---------*
+$('#js-tab1').tab({
+	defaultIndex : 0,
+	activeClass : 'ui-tab-red',
+	is_slide : true
+});
+</code>
+</pre>
+
+<h3>Range用法</h3>
+<pre>
+<code>
+*config参数说明
+*---------
+*min:最大值 
+*max:最小值 
+*step:步长
+*defaltValue:默认值 
+*disable:是否可滑动
+*starFn:callback
+*moveFn:callback
+*endFn:callback 
+---------*
+$('#slider1').range({
+	min 			: 0,
+	max 			: 36,
+	step 			: 1,
+	defaultValue 	: 12,
+	startFn 		:function(value){
+		$('.text1').text(value + '月');
+	},
+	moveFn			: function(value){
+		$('.text1').text(value + '月');
+	},
+	endFn 			: function(value){
+
+	}
+})
+</code>
+</pre>
+
 
