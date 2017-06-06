@@ -6,3 +6,9 @@
 <p><a href="https://myfirebug.github.io/ui/dist/html/index.html">https://myfirebug.github.io/ui/dist/html/index.html</a></p>
 <h2>使用</h2>
 <h3>Toast</h3>
+<blockquote>
+<p>在 Head 引入（CSS前面）</p>
+</blockquote>
+<pre>
+<link rel="stylesheet" href="css/widget/toast/toast.css">
+</pre>
