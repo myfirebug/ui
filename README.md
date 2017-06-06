@@ -203,15 +203,9 @@ $('#slider1').range({
 	max: 36,
 	step: 1,
 	defaultValue: 12,
-	startFn:function(value){
-		$('.text1').text(value + '月');
-	},
-	moveFn: function(value){
-		$('.text1').text(value + '月');
-	},
-	endFn: function(value){
-
-	}
+	startFn:function(value){$('.text1').text(value + '月');},
+	moveFn: function(value){$('.text1').text(value + '月');},
+	endFn: function(value){}
 })
 </code>
 </pre>
