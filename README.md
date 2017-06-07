@@ -10,8 +10,7 @@
 <p><a href="https://myfirebug.github.io/ui/dist/html/index.html">https://myfirebug.github.io/ui/dist/html/index.html</a></p>
 <h2>使用</h2>
 <h3>Toast用法</h3>
-<pre>
-<code>
+
 ```
 /*config参数说明
 *---------
@@ -25,8 +24,6 @@ Toast({
   duration: 5000
 });
 ```
-</code>
-</pre>
 <h3>Action用法</h3>
 <pre>
 <code>
