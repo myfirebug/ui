@@ -12,6 +12,7 @@
 <h3>Toast用法</h3>
 <pre>
 <code>
+```
 /*config参数说明
 *---------
 *text:内容  
@@ -23,6 +24,7 @@ Toast({
   icon:'fails',
   duration: 5000
 });
+```
 </code>
 </pre>
 <h3>Action用法</h3>
