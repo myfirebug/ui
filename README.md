@@ -25,8 +25,8 @@ Toast({
 });
 ```
 <h3>Action用法</h3>
-<pre>
-<code>
+
+```javascript
 /*config参数说明
 *---------
 *title:标题
@@ -58,11 +58,10 @@ Actions({
 	]
 
 });
-</code>
-</pre>
+```
 <h3>Tips用法</h3>
-<pre>
-<code>
+
+```javascript
 /*config参数说明
 *---------
 *text:内容  
@@ -72,11 +71,10 @@ Tips({
   test: '提示',
   delay: 5000
 });
-</code>
-</pre>
+```
 <h3>Dialog用法</h3>
-<pre>
-<code>
+
+```javascript
 /*config参数说明
 *---------
 *title:标题
@@ -95,11 +93,10 @@ Dialog({
 		}
 	]
 });
-</code>
-</pre>
+```
 <h3>Swiper用法</h3>
-<pre>
-<code>
+
+```javascript
 /*config参数说明
 *---------
 *container：必填项操作的DOM
@@ -122,11 +119,10 @@ new Swiper('#swiper-container',{
 	startFn: function(){},
 	endFn: function(){}
 });
-</code>
-</pre>
+```
 <h3>CityPicker用法</h3>
-<pre>
-<code>
+
+```javascript
 /*config参数说明
 *---------
 *container：必填项操作的DOM
@@ -142,11 +138,10 @@ new CityPicker('#js-datetitmepicker',{
 	selectedClass:'.c-gray',
 	coordinates:[0,0,0]
 });
-</code>
-</pre>
+```
 <h3>DatetimePicker用法</h3>
-<pre>
-<code>
+
+```javascript
 /*config参数说明
 *---------
 *container：必填项操作的DOM
@@ -166,12 +161,11 @@ new DatetimePicker('#js-datetitmepicker',{
 	connector:'-',
 	callBack:function(){}
 });
-</code>
-</pre>
+```
 
 <h3>Tab用法</h3>
-<pre>
-<code>
+
+```javascript
 /*config参数说明
 *---------
 *defaultIndex:默认项  
@@ -184,12 +178,11 @@ $('#js-tab1').tab({
 	activeClass : 'ui-tab-red',
 	is_slide : true
 });
-</code>
-</pre>
+```
 
 <h3>Range用法</h3>
-<pre>
-<code>
+
+```javascript
 /*config参数说明
 *---------
 *min:最大值 
@@ -210,7 +203,6 @@ $('#slider1').range({
 	moveFn: function(value){$('.text1').text(value + '月');},
 	endFn: function(value){}
 })
-</code>
-</pre>
+```
 
 
