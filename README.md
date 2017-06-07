@@ -3,7 +3,7 @@
 <h2>简介</h2>
 <p>移动端基于jquery,zepto的UI组件库，目前实现</p>
 
-```javascript
+```
 JS Components：Toast、Action、Tips、Dialog、Swiper、CityPicker、DatetimePicker、Tab、Range
 Css Component：oneborder、Loading、button
 From Component：switch、Radio、Checkbox
