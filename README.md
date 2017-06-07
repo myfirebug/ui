@@ -11,7 +11,7 @@
 <h2>使用</h2>
 <h3>Toast用法</h3>
 
-```
+```javascript
 /*config参数说明
 *---------
 *text:内容  
