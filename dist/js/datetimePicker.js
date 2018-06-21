@@ -116,7 +116,12 @@
 				e.stopPropagation();
 				e.preventDefault();
 				_this.element = e.target;
-				if($(this).attr('value')){
+				/* 
+				 * fix use input value
+				 * <input type="button" value="请选择">
+				 * 如果使用input button 默认 value是随机的化 这段代码的通用性并不好
+				 */
+				if( $(this).attr('value') !== "请选择" ){
 					containerVal 		=  $(this).attr('value');
 				}
 				if(containerVal){
