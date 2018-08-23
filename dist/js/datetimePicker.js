@@ -183,6 +183,10 @@
 				parent += '<div class="ui-picker-slot"id="picker-'+ i +'"><ul class="ui-picker-list">'+ _this.itemTemplate(i) +'</ul></div>';
 			};
 			_this.pickerbody.append(parent);
+			//判断是否存在多次new实例 多次new 只创建一次dom 解决多次new实例创建多个dom引发的无法选择时间的bug
+			if( $(".ui-picker-wrap").length>0){
+			 	return;
+		        }
 			$body.append(this.pickerWrap);
 			for(var i=0; i<arr.length;i++){
 				(function(i){
